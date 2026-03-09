@@ -12,6 +12,7 @@
     "@fontsource/orbitron": "^5.2.8",
     "@stripe/stripe-js": "^8.9.0",
     "@supabase/supabase-js": "^2.98.0",
+    "bcryptjs": "^3.0.3",
     "next": "16.1.6",
     "next-auth": "^4.24.13",
     "react": "19.2.3",

@@ -1,31 +1,30 @@
 "use client"
 
-export default function Login(){
+export default function Signup() {
 
-  async function login(e:any){
+  async function signup(e:any){
     e.preventDefault()
 
     const username=e.target.username.value
     const password=e.target.password.value
 
-    const res=await fetch("/api/login",{
+    const res=await fetch("/api/signup",{
       method:"POST",
       body:JSON.stringify({username,password})
     })
 
     if(res.ok){
-      window.location.href="/download"
-    }else{
-      alert("Login failed")
+      alert("Account created")
+      window.location.href="/login"
     }
   }
 
-  return(
+  return (
     <main className="min-h-screen bg-[#020617] text-white flex items-center justify-center">
 
-      <form onSubmit={login} className="bg-[#0f172a] p-10 rounded-xl w-96">
+      <form onSubmit={signup} className="bg-[#0f172a] p-10 rounded-xl w-96">
 
-        <h1 className="text-3xl font-bold mb-6">Login</h1>
+        <h1 className="text-3xl font-bold mb-6">Create Account</h1>
 
         <input
           name="username"
@@ -41,7 +40,7 @@ export default function Login(){
         />
 
         <button className="w-full bg-green-500 hover:bg-green-400 text-black p-3 rounded font-semibold">
-          Login
+          Sign Up
         </button>
 
       </form>
