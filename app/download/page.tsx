@@ -1,1 +1,1 @@
-export default function Download(){return <main style={{padding:'40px'}}>Download Page</main>} 
+"export default function Download(){return (<main className='bg-[#020617] text-white min-h-screen flex items-center justify-center'><div className='text-center'><h1 className='text-5xl font-bold mb-6'>Download SwiftPing</h1><p className='text-gray-400 mb-8'>Latest optimized gaming build.</p><a href='#' className='bg-green-500 hover:bg-green-400 text-black px-8 py-4 rounded-xl font-semibold shadow-[0_0_20px_rgba(34,197,94,0.5)]'>Download Now</a></div></main>)}" 
