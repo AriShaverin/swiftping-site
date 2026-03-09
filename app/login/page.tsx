@@ -1,1 +1,1 @@
-"export default function Login(){return(<main style={{padding:'40px'}}><h1>Login</h1><p>Login page placeholder</p></main>)}" 
+export default function Login(){return <div style={{padding:'40px'}}>Login Page</div>} 
