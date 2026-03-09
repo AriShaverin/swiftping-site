@@ -1,1 +1,1 @@
-export default function Login(){return <div style={{padding:'40px'}}>Login Page</div>} 
+export default function Login(){return <main style={{padding:'40px'}}>Login Page</main>} 
