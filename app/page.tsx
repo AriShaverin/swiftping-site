@@ -12,13 +12,16 @@ export default function Home() {
           </div>
 
           <div className="flex gap-8 text-sm text-gray-300">
-            <a href="#" className="hover:text-white transition">Features</a>
-            <a href="#" className="hover:text-white transition">Pricing</a>
-            <a href="#" className="hover:text-white transition">Download</a>
-            <a href="#" className="hover:text-white transition">Support</a>
+            <a href="#features" className="hover:text-white transition">Features</a>
+            <a href="#pricing" className="hover:text-white transition">Pricing</a>
+            <a href="/download" className="hover:text-white transition">Download</a>
+            <a href="/support" className="hover:text-white transition">Support</a>
           </div>
 
-          <button className="bg-green-500 hover:bg-green-400 text-black px-6 py-2 rounded-lg font-semibold shadow-[0_0_15px_rgba(34,197,94,0.5)] transition">
+          <button
+            onClick={() => window.location.href="/download"}
+            className="bg-green-500 hover:bg-green-400 text-black px-6 py-2 rounded-lg font-semibold shadow-[0_0_15px_rgba(34,197,94,0.5)] transition"
+          >
             Get SwiftPing
           </button>
 
@@ -50,11 +53,17 @@ export default function Home() {
 
           <div className="flex justify-center gap-6">
 
-            <button className="bg-green-500 hover:bg-green-400 text-black font-semibold px-10 py-4 rounded-xl text-lg shadow-[0_0_25px_rgba(34,197,94,0.6)] transition">
+            <button
+              onClick={() => window.location.href="/download"}
+              className="bg-green-500 hover:bg-green-400 text-black font-semibold px-10 py-4 rounded-xl text-lg shadow-[0_0_25px_rgba(34,197,94,0.6)] transition"
+            >
               Download
             </button>
 
-            <button className="bg-[#1e293b] hover:bg-[#334155] px-10 py-4 rounded-xl text-lg border border-gray-700 transition">
+            <button
+              onClick={() => document.getElementById("pricing")?.scrollIntoView({behavior:"smooth"})}
+              className="bg-[#1e293b] hover:bg-[#334155] px-10 py-4 rounded-xl text-lg border border-gray-700 transition"
+            >
               Pricing
             </button>
 
@@ -65,7 +74,7 @@ export default function Home() {
       </section>
 
 
-      <section className="py-32 px-6 text-center bg-[#020617]">
+      <section id="features" className="py-32 px-6 text-center bg-[#020617]">
 
         <h2 className="text-5xl font-bold mb-20 tracking-tight">
           Built For Competitive Gaming
@@ -110,7 +119,7 @@ export default function Home() {
       </section>
 
 
-      <section className="py-32 px-6 text-center bg-[#020617]">
+      <section id="pricing" className="py-32 px-6 text-center bg-[#020617]">
 
         <h2 className="text-5xl font-bold mb-20 tracking-tight">
           Simple Pricing
@@ -122,7 +131,7 @@ export default function Home() {
 
             <h3 className="text-2xl mb-6 font-semibold">Free</h3>
 
-            <p className="text-4xl font-bold mb-8">$0</p>
+            <p className="text-4xl font-bold mb-8">£0</p>
 
             <ul className="text-gray-400 space-y-3 mb-10">
               <li>✓ Basic optimizer</li>
@@ -130,7 +139,10 @@ export default function Home() {
               <li>✓ Ping reset</li>
             </ul>
 
-            <button className="bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded-lg transition">
+            <button
+              onClick={() => window.location.href="/signup"}
+              className="bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded-lg transition"
+            >
               Start Free
             </button>
 
@@ -141,7 +153,9 @@ export default function Home() {
 
             <h3 className="text-2xl mb-6 font-semibold">Pro</h3>
 
-            <p className="text-4xl font-bold mb-8">$4.99/mo</p>
+            <p className="text-4xl font-bold mb-2">£10</p>
+
+            <p className="text-gray-400 mb-8">per month</p>
 
             <ul className="text-gray-400 space-y-3 mb-10">
               <li>✓ Full optimizer</li>
@@ -150,7 +164,10 @@ export default function Home() {
               <li>✓ Priority updates</li>
             </ul>
 
-            <button className="bg-green-500 hover:bg-green-400 px-8 py-3 rounded-lg text-black font-semibold shadow-[0_0_15px_rgba(34,197,94,0.5)] transition">
+            <button
+              onClick={() => window.location.href="/checkout?plan=pro"}
+              className="bg-green-500 hover:bg-green-400 px-8 py-3 rounded-lg text-black font-semibold shadow-[0_0_15px_rgba(34,197,94,0.5)] transition"
+            >
               Get Pro
             </button>
 
@@ -161,7 +178,7 @@ export default function Home() {
 
             <h3 className="text-2xl mb-6 font-semibold">Lifetime</h3>
 
-            <p className="text-4xl font-bold mb-8">$25</p>
+            <p className="text-4xl font-bold mb-8">£35.99</p>
 
             <ul className="text-gray-400 space-y-3 mb-10">
               <li>✓ Everything included</li>
@@ -169,7 +186,10 @@ export default function Home() {
               <li>✓ Future updates</li>
             </ul>
 
-            <button className="bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded-lg transition">
+            <button
+              onClick={() => window.location.href="/checkout?plan=lifetime"}
+              className="bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded-lg transition"
+            >
               Buy Once
             </button>
 
