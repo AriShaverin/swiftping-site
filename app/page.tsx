@@ -9,7 +9,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
           <div className="text-2xl font-bold tracking-wide">
-            SwiftPing
+            SwiftPing ?
           </div>
 
           <div className="flex gap-8 text-sm text-gray-300">
@@ -23,7 +23,7 @@ export default function Home() {
             onClick={() => window.location.href="/download"}
             className="bg-green-500 hover:bg-green-400 text-black px-6 py-2 rounded-lg font-semibold shadow-[0_0_15px_rgba(34,197,94,0.5)] transition"
           >
-            Get SwiftPing
+            Get SwiftPing ?
           </button>
 
         </div>
@@ -45,7 +45,7 @@ export default function Home() {
         <div className="relative text-center max-w-4xl px-6">
 
           <h1 className="text-7xl md:text-8xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-            SwiftPing
+            SwiftPing ?
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-10">
@@ -202,7 +202,7 @@ export default function Home() {
 
 
       <footer className="py-16 text-center text-gray-500 border-t border-gray-800">
-        <p>© 2026 SwiftPing</p>
+        <p>© 2026 SwiftPing ?</p>
         <p className="mt-2 text-sm">Built for competitive gamers.</p>
       </footer>
 
