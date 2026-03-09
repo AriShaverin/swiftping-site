@@ -4,7 +4,29 @@ export default function Home() {
   return (
     <main className="bg-[#020617] text-white">
 
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-[#020617]/80 backdrop-blur border-b border-gray-800">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+          <div className="text-2xl font-bold tracking-wide">
+            SwiftPing
+          </div>
+
+          <div className="flex gap-8 text-sm text-gray-300">
+            <a href="#" className="hover:text-white transition">Features</a>
+            <a href="#" className="hover:text-white transition">Pricing</a>
+            <a href="#" className="hover:text-white transition">Download</a>
+            <a href="#" className="hover:text-white transition">Support</a>
+          </div>
+
+          <button className="bg-green-500 hover:bg-green-400 text-black px-6 py-2 rounded-lg font-semibold shadow-[0_0_15px_rgba(34,197,94,0.5)] transition">
+            Get SwiftPing
+          </button>
+
+        </div>
+      </nav>
+
+
+      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-24">
 
         <div
           className="absolute inset-0 bg-cover bg-center scale-110"
@@ -14,7 +36,7 @@ export default function Home() {
           }}
         />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-[#020617]/30 via-[#020617]/70 to-[#020617]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#020617]/30 via-[#020617]/80 to-[#020617]" />
 
         <div className="relative text-center max-w-4xl px-6">
 
@@ -42,7 +64,8 @@ export default function Home() {
 
       </section>
 
-      <section className="py-28 px-6 text-center bg-[#020617]">
+
+      <section className="py-32 px-6 text-center bg-[#020617]">
 
         <h2 className="text-5xl font-bold mb-20 tracking-tight">
           Built For Competitive Gaming
@@ -50,7 +73,7 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
 
-          <div className="bg-[#0f172a] p-10 rounded-2xl border border-gray-800 hover:border-green-400 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition">
+          <div className="bg-[#0f172a] p-10 rounded-2xl border border-gray-800 hover:border-green-400 hover:shadow-[0_0_25px_rgba(34,197,94,0.35)] transition">
 
             <h3 className="text-2xl font-semibold mb-4">⚡ Lower Ping</h3>
 
@@ -60,7 +83,8 @@ export default function Home() {
 
           </div>
 
-          <div className="bg-[#0f172a] p-10 rounded-2xl border border-gray-800 hover:border-green-400 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition">
+
+          <div className="bg-[#0f172a] p-10 rounded-2xl border border-gray-800 hover:border-green-400 hover:shadow-[0_0_25px_rgba(34,197,94,0.35)] transition">
 
             <h3 className="text-2xl font-semibold mb-4">🧠 Free RAM</h3>
 
@@ -70,7 +94,8 @@ export default function Home() {
 
           </div>
 
-          <div className="bg-[#0f172a] p-10 rounded-2xl border border-gray-800 hover:border-green-400 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition">
+
+          <div className="bg-[#0f172a] p-10 rounded-2xl border border-gray-800 hover:border-green-400 hover:shadow-[0_0_25px_rgba(34,197,94,0.35)] transition">
 
             <h3 className="text-2xl font-semibold mb-4">🚀 Boost FPS</h3>
 
@@ -84,7 +109,8 @@ export default function Home() {
 
       </section>
 
-      <section className="py-28 px-6 text-center bg-[#020617]">
+
+      <section className="py-32 px-6 text-center bg-[#020617]">
 
         <h2 className="text-5xl font-bold mb-20 tracking-tight">
           Simple Pricing
@@ -92,7 +118,7 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
 
-          <div className="bg-[#0f172a] p-12 rounded-2xl border border-gray-800">
+          <div className="bg-[#0f172a] p-12 rounded-2xl border border-gray-800 hover:border-gray-600 transition">
 
             <h3 className="text-2xl mb-6 font-semibold">Free</h3>
 
@@ -104,13 +130,14 @@ export default function Home() {
               <li>✓ Ping reset</li>
             </ul>
 
-            <button className="bg-gray-700 px-8 py-3 rounded-lg">
+            <button className="bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded-lg transition">
               Start Free
             </button>
 
           </div>
 
-          <div className="bg-[#0f172a] p-12 rounded-2xl border border-green-500 scale-105 shadow-[0_0_25px_rgba(34,197,94,0.5)]">
+
+          <div className="bg-[#0f172a] p-12 rounded-2xl border border-green-500 scale-105 shadow-[0_0_30px_rgba(34,197,94,0.45)]">
 
             <h3 className="text-2xl mb-6 font-semibold">Pro</h3>
 
@@ -123,13 +150,14 @@ export default function Home() {
               <li>✓ Priority updates</li>
             </ul>
 
-            <button className="bg-green-500 px-8 py-3 rounded-lg text-black font-semibold">
+            <button className="bg-green-500 hover:bg-green-400 px-8 py-3 rounded-lg text-black font-semibold shadow-[0_0_15px_rgba(34,197,94,0.5)] transition">
               Get Pro
             </button>
 
           </div>
 
-          <div className="bg-[#0f172a] p-12 rounded-2xl border border-gray-800">
+
+          <div className="bg-[#0f172a] p-12 rounded-2xl border border-gray-800 hover:border-gray-600 transition">
 
             <h3 className="text-2xl mb-6 font-semibold">Lifetime</h3>
 
@@ -141,7 +169,7 @@ export default function Home() {
               <li>✓ Future updates</li>
             </ul>
 
-            <button className="bg-gray-700 px-8 py-3 rounded-lg">
+            <button className="bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded-lg transition">
               Buy Once
             </button>
 
@@ -151,7 +179,8 @@ export default function Home() {
 
       </section>
 
-      <footer className="py-14 text-center text-gray-500 border-t border-gray-800">
+
+      <footer className="py-16 text-center text-gray-500 border-t border-gray-800">
         <p>© 2026 SwiftPing</p>
         <p className="mt-2 text-sm">Built for competitive gamers.</p>
       </footer>

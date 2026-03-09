@@ -1,3 +1,11 @@
+@import "@fontsource/orbitron/700.css";
+@import "@fontsource/orbitron/800.css";
+
+body {
+  font-family: "Orbitron", system-ui, sans-serif;
+  background: #020617;
+}
+
 @import "tailwindcss";
 
 :root {
