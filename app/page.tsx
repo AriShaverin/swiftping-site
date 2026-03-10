@@ -1,6 +1,6 @@
 import Link from "next/link";
 export default function Home(){
-return (<main style={{background:"#020617",color:"white",fontFamily:"Arial"}}>
+return (<main style={{background:"#020617",color:"white",fontFamily:"Arial",minHeight:"100vh"}}>
 <nav style={{display:"flex",justifyContent:"space-between",padding:"20px",borderBottom:"1px solid #1f2937"}}>
 <div style={{fontSize:"24px",fontWeight:"bold"}}>SwiftPing</div>
 <div style={{display:"flex",gap:"20px"}}>
@@ -30,7 +30,7 @@ return (<main style={{background:"#020617",color:"white",fontFamily:"Arial"}}>
 </section>
 <section id="support" style={{padding:"80px 20px",textAlign:"center"}}>
 <h2 style={{fontSize:"40px"}}>Support</h2>
-<p>Contact: support@swiftping.com</p>
+<p>support@swiftping.com</p>
 </section>
 </main>);
 }
